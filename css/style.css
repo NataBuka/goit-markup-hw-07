@@ -115,7 +115,7 @@ img {
 
 /* link*/
 
-.main-nav {
+.site-nav {
   display: flex;
   align-items: center;
 
@@ -144,9 +144,6 @@ img {
   align-items: center;
 }
 
-/*.header-nav .header-list:not(:last-child) {
-  margin-right: 50px;
-}*/
 .navigation-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -232,11 +229,11 @@ img {
   align-items: center;
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-link:active,
-.contact:hover,
-.contact:focus {
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link:active,
+.connection-link:hover,
+.connection-link:focus {
   color: var(--brand-color);
 }
 
