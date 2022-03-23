@@ -90,13 +90,12 @@ img {
 /*  header start */
 
 /* current */
-.header-nav .header-link.current,
-.header-list .header-link.current {
+.navigation .navigation-link.current {
   color: var(--brand-color);
 }
 
 /* logo */
-.header-logo,
+.logo,
 .footer-logo {
   color: var(--brand-color);
   font-family: Raleway, sans-serif;
@@ -105,11 +104,11 @@ img {
   line-height: 1.19;
 }
 
-.header-logo {
+.logo {
   margin-right: 93px;
 }
 
-.header-brand {
+.logo-text {
   color: var(--logo-text-color);
   font-family: Raleway, sans-serif;
 }
@@ -123,7 +122,7 @@ img {
   margin-right: auto;
 }
 
-.header-nav {
+.navigation {
   display: flex;
 }
 
@@ -145,10 +144,13 @@ img {
   align-items: center;
 }
 
-.header-nav .header-list:not(:last-child) {
+/*.header-nav .header-list:not(:last-child) {
+  margin-right: 50px;
+}*/
+.navigation-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-list {
+.navigation-item {
   position: relative;
 }
 .Studio {
@@ -166,22 +168,25 @@ img {
   border-radius: 4px;
   background-color: var(--brand-color);
 }
-.contact-links {
+.connection-link {
   display: flex;
   margin-left: auto;
 }
 
-.list-link .link-item + .link-item {
+/*.list-link .link-item + .link-item {
+  margin-left: 50px;
+}*/
+.connection-item {
   margin-left: 50px;
 }
 
-.link-icon {
+.connection-icon {
   fill: var(--basc-text-color);
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact:focus .link-icon,
-.contact:hover .link-icon {
+.connection-link .connection-icon,
+.connection-link:hover .connection-icon {
   fill: var(--brand-color);
 }
 
@@ -195,12 +200,12 @@ img {
   height: 16px;
 }
 
-.list-link {
+.connection {
   display: flex;
   margin-left: auto;
 }
 
-.header-link {
+.navigation-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--black-color);
   text-decoration: none;
@@ -210,7 +215,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contact {
+.connection {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
@@ -321,7 +326,7 @@ img {
   flex-basis: calc(100%-4 * 30 / 4);
 }
 
-.publicity-svg {
+.publicity-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,7 +417,7 @@ img {
   flex-wrap: wrap;
 }
 
-.team-images {
+.team-card {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -424,19 +429,19 @@ img {
   margin-top: 0px;
 }
 
-.team-imagest-text {
+.team-meta {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-images:not(:nth-child(4n)) {
+.team-card:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-.team-images:not(:nth-last-child(-n + 4)) {
+.team-card:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
 }
 
-.team-item {
+.team-name {
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--black-color);
@@ -462,7 +467,7 @@ img {
   margin-right: 8px;
 }
 
-.communication {
+.team-link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -481,8 +486,8 @@ img {
   height: 20px;
   fill: currentColor;
 }
-.communication:focus,
-.communication:hover {
+.team-link:focus,
+.team-link:hover {
   color: var(--wite-color);
   background-color: var(--brand-color);
   border-radius: 50%;
@@ -494,12 +499,12 @@ img {
 .klients-list {
   display: flex;
 }
-.btn {
+.klient-logo {
   width: 170px;
   height: 92px;
 }
 
-.btn-klient {
+.klient-link {
   padding: 16px 32px;
   display: flex;
   width: 100%;
@@ -512,17 +517,17 @@ img {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:not(:last-child) {
+.klient-logo:not(:last-child) {
   margin-right: 30px;
 }
 
-.btn-klient:hover,
-.btn-klient:focus {
+.klient-link:hover,
+.klient-link:focus {
   border: 1px solid var(--brand-color);
   color: var(--brand-color);
 }
 
-.communication-imail {
+.klient-imail {
   display: flex;
   width: 106px;
   height: 60px;
@@ -540,15 +545,6 @@ img {
   padding-bottom: 60px;
   background-color: var(--light-black-color);
   color: var(--wite-color);
-}
-
-.footer-link {
-  color: var(--secondary-text-color);
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list {
@@ -573,7 +569,10 @@ img {
 .footer-relations {
   margin-right: 70px;
 }
-.footer-form-title,
+
+/* footer-form start */
+
+.blank-title,
 .footer-headline {
   color: var(--wite-color);
   text-transform: uppercase;
@@ -583,6 +582,14 @@ img {
   text-align: left;
   margin-bottom: 20px;
 }
+.footer-link {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .footer-form {
   display: flex;
@@ -590,7 +597,7 @@ img {
   align-items: flex-end;
 }
 
-.footer-icon {
+.blank-icon {
   position: absolute;
   top: 0;
   right: 28px;
@@ -599,11 +606,11 @@ img {
   height: 24px;
   fill: var(--wite-color);
 }
-.div-ftr {
+.blank {
   margin-right: 12px;
 }
 
-.label-e-mail {
+.blank-label {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -616,11 +623,11 @@ img {
   text-align: left;
 }
 
-.footer-lbl {
+.blank-wrapper {
   position: relative;
 }
 
-.f-f-input {
+.blank-input {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -631,16 +638,16 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.f-f-input:not(:placeholder-shown) + .label-e-mail,
-.f-f-input:focus + .label-e-mail {
+.blank-input:not(:placeholder-shown) + .blank-label,
+.blank-input:focus + .blank-label {
   transform: translatey(-220%);
 }
-.footer-form-img {
+.blank-img {
   fill: var(--wite-color);
   background-size: contain;
 }
 
-.footer-form-btn {
+.blank-button {
   position: relative;
   padding: 10px 28px;
   width: 200px;
@@ -656,15 +663,15 @@ img {
   letter-spacing: 0.06em;
 }
 
-.footer-div {
+.footer-connection {
   margin-right: 94px;
 }
 
-.footer-imail-li:not(:last-child) {
+.reference:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-imail {
+.links {
   display: flex;
   margin-top: 20px;
 }
@@ -684,7 +691,7 @@ img {
 .footer-link:focus {
   color: var(--brand-color);
 }
-.ftr-imail-link {
+.reference-link {
   display: flex;
   background-position: center;
   width: 44px;
@@ -700,15 +707,15 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ftr-imail-svg {
+.reference-svg {
   display: flex;
   width: 20px;
   height: 20px;
   fill: var(--wite-color);
 }
 
-.ftr-imail-link:hover,
-.ftr-imail-link:focus {
+.reference-link:hover,
+.reference-link:focus {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
@@ -914,8 +921,8 @@ img {
   width: 11px;
   height: 11px;
 }
-.form-hover:hover,
-.form-hover:focus,
+.form-field:hover,
+.form-field:focus,
 .btn-close:focus,
 .btn-close:hover {
   fill: var(--brand-color);
@@ -962,7 +969,7 @@ img {
   text-align: left;
 }
 
-.image {
+.form-image {
   position: absolute;
   transform: translatey(100%);
   left: 12px;
@@ -971,11 +978,11 @@ img {
   width: 18px;
   height: 18px;
 }
-.form-hover {
+.form-field {
   position: relative;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus + .image {
+.form-input:focus + .form-image {
   fill: var(--brand-color);
 }
 .form-input-koment:hover,
@@ -1033,18 +1040,18 @@ textarea {
   color: var(--brand-color);
 }
 
-.form-item-chek {
+.chek {
   position: relative;
   display: flex;
   justify-content: right;
   align-items: center;
   margin-bottom: 30px;
 }
-.form-item-chek .form-label {
+.chek .form-label {
   margin-bottom: 4px;
 }
 
-.checkbox-icon {
+.check-icon {
   position: absolute;
   top: 0;
   left: 10px;
@@ -1055,7 +1062,7 @@ textarea {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input-chek:checked + .checkbox-icon {
+.chek-input:checked + .check-icon {
   background-color: var(--brand-color);
   background-image: url("../images/icon-check.svg");
   background-size: contain;
@@ -1069,7 +1076,7 @@ textarea {
   display: flex;
   align-items: center;
 }*/
-.form-label-check {
+.check-label {
   display: flex;
   justify-content: space-around;
   align-items: center;
