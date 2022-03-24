@@ -25,35 +25,35 @@
 
             <nav class="site-nav">
                 <a href="./index.html" class="logo link">
-                    Web<span class="logo-text">Studio</span>
+                    Web<span class="logo__text">Studio</span>
                 </a>
                 <ul class="navigation list">
-                    <li class="navigation-item">
-                        <a href="./index.html" class="navigation-link link current Studio">Студия</a>
+                    <li class="navigation__item">
+                        <a href="./index.html" class="navigation__link link current Studio">Студия</a>
                     </li>
-                    <li class="navigation-item">
-                        <a href="./portfolio.html" class="navigation-link link">Портфолио</a>
+                    <li class="navigation__item">
+                        <a href="./portfolio.html" class="navigation__link link">Портфолио</a>
                     </li>
-                    <li class="navigation-item">
-                        <a href="" class="navigation-link link">Контакты</a>
+                    <li class="navigation__item">
+                        <a href="" class="navigation__link link">Контакты</a>
                     </li>
                 </ul>
-
             </nav>
 
 
 
             <ul class="connection list">
 
-                <li class="connection-item">
-                    <a href="mailtu:info@devstudio.com" class="connection-link link" target="_blank">
-                        <svg class="connection-icon imail">
+                <li class="connection__item">
+                    <a href="mailtu:info@devstudio.com" class="connection__link link" target="_blank">
+                        <svg class="connection__icon imail">
                             <use href="./images/sprite.svg#icon-imail"></use>
                         </svg>info@devstudio.com</a>
                 </li>
 
-                <li class="connection-item">
-                    <a href="tel:+380961111111" class="connection-link link"><svg class="connection-icon smartphone">
+                <li class="connection__item">
+                    <a href="tel:+380961111111" class="connection__link link">
+                        <svg class="connection__icon smartphone">
                             <use href="./images/sprite.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -68,7 +68,7 @@
         <section class="hero section background">
 
             <div class="wrapper">
-                <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения <br /> для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="button">Заказать услугу</button>
             </div>
 
@@ -79,50 +79,49 @@
                 
                 <button data-modal-close class="btn-close">
                     <svg class="close">
-                    <use href="./images/sprite.svg#icon-close">
-                    </use>
+                    <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
-               </button>
+                </button>
 
-             <form name="form" class="form js-speaker-form" autocomplete="off">
+                <form name="form" class="form js-speaker-form" autocomplete="off">
 
-             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
                 
-            <div class="form-field"> 
-                    <label class="form-label" for="name">Имя</label>
-                    <input class="form-input" type="text" name="user-name" id="name" placeholder=" ">  
-                    <svg class="form-image">
-                        <use class="form-img" href="./images/sprite.svg#icon-person" class="form-img"> </use>
+                <div class="form__field"> 
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" type="text" name="user-name" id="name" placeholder=" ">  
+                    <svg class="form__image">
+                        <use class="" href="./images/sprite.svg#icon-person" class="form-img"> </use>
                     </svg>
-            </div>
+                </div>
 
-            <div class="form-field">
-                   <label class="form-label" for="tel">Телефон</label>
-                    <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
-                    <svg class="form-image">
+                <div class="form__field">
+                   <label class="form__label" for="tel">Телефон</label>
+                    <input class="form__input" type="tel" name="tel" id="tel" placeholder=" ">
+                    <svg class="form__image">
                         <use href="./images/sprite.svg#icon-phone"></use>
                     </svg>
-            </div>
+                </div>
 
-            <div class="form-field">
-                    <label class="form-label" for="email">Почта</label>            
-                    <input class="form-input" type="email" name="email" id="email" placeholder=" ">
-                    <svg class="form-image">
+                <div class="form__field">
+                    <label class="form__label" for="email">Почта</label>            
+                    <input class="form__input" type="email" name="email" id="email" placeholder=" ">
+                    <svg class="form__image">
                         <use href="./images/sprite.svg#icon-mail"></use>
                     </svg>
-            </div>
-
-            <div class="form-field">
-                <div class="form-item-koment">
-                    <label class="form-label" for="koment">Комментарий</label>
-                        <textarea class="form-input-koment"  placeholder="Введите текст"  type="textarea" name="koment" id="koment"></textarea>
                 </div>
-            </div>
 
-            <div class="chek">
-                <label class="check-label" for="choice">Соглашаюсь с рассылкой и принимаю <a href="" class="chek-email">Условия договора</a>
-                    <input class="chek-input visually-hidden" type="checkbox" name="choice" value="choice" id="choice">
-                    <span class="check-icon"></span>
+                <div class="form__field">
+                <div class="form__item-koment">
+                    <label class="form__label" for="koment">Комментарий</label>
+                        <textarea class="form__input-koment"  placeholder="Введите текст"  type="textarea" name="koment" id="koment"></textarea>
+                </div>
+                </div>
+
+                <div class="chek">
+                <label class="check__label" for="choice">Соглашаюсь с рассылкой и принимаю <a href="" class="chek__email">Условия договора</a>
+                    <input class="chek__input visually-hidden" type="checkbox" name="choice" value="choice" id="choice">
+                    <span class="check__icon"></span>
                 </label>
             </div>
             <!--
