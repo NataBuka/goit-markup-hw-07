@@ -531,7 +531,7 @@ textarea {
 
 /* publicity start*/
 
-.publicity-caption {
+.publicity__caption {
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--black-color);
@@ -541,7 +541,7 @@ textarea {
   line-height: 1.14;
 }
 
-.publicity-text {
+.publicity__text {
   color: var(--basc-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -550,11 +550,11 @@ textarea {
   box-sizing: border-box;
 }
 
-.publicity-list .publicity-item {
+.publicity-list .publicity__item {
   flex-basis: calc(100%-4 * 30 / 4);
 }
 
-.publicity-img {
+.publicity__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,15 +570,15 @@ textarea {
   justify-content: space-between;
 }
 
-.publicity-list .publicity-item {
+.publicity-list .publicity__item {
   display: inline-block;
   width: 270px;
 }
 
-.publicity-item:not(:last-child) {
+.publicity__item:not(:last-child) {
   margin-right: 30px;
 }
-.publicity-item {
+.publicity__item {
   width: 270px;
 }
 
@@ -587,7 +587,7 @@ textarea {
   margin-right: auto;
 }
 
-.publicity-icon {
+.publicity__icon {
   width: 70px;
   height: 70px;
 }
@@ -603,7 +603,7 @@ textarea {
 .works {
   padding-top: 0px;
 }
-.work-text {
+.work__text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -617,16 +617,16 @@ textarea {
   background-color: var(--label-color);
 }
 
-.work-item {
+.work__item {
   position: relative;
   flex-basis: calc(100%-3 * 30px / 3);
 }
 
 /* works finish */
 
-.works-title,
+.works__title,
 .klients-title,
-.team-title {
+.team__title {
   margin-top: 0px;
   margin-bottom: 50px;
   color: var(--black-color);
@@ -645,7 +645,7 @@ textarea {
   flex-wrap: wrap;
 }
 
-.team-card {
+.team__card {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -653,23 +653,23 @@ textarea {
   flex-basis: calc(100%-4 * 30px) / 4;
 }
 
-.team-img {
+.team__img {
   margin-top: 0px;
 }
 
-.team-meta {
+.team__meta {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-card:not(:nth-child(4n)) {
+.team__card:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-.team-card:not(:nth-last-child(-n + 4)) {
+.team__card:not(:nth-last-child(-n + 4)) {
   margin-bottom: 30px;
 }
 
-.team-name {
+.team__name {
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--black-color);
@@ -678,12 +678,12 @@ textarea {
   line-height: 1.19;
   text-align: center;
 }
-.team-contacts {
+.contacts {
   display: flex;
   justify-content: center;
 }
 
-.team-text {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -691,11 +691,11 @@ textarea {
   margin-bottom: 16px;
 }
 
-.team-contact:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.team-link {
+.contacts__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -708,14 +708,14 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-imail {
+.contacts__imail {
   display: flex;
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
-.team-link:focus,
-.team-link:hover {
+.contacts__link:focus,
+.contacts__link:hover {
   color: var(--wite-color);
   background-color: var(--brand-color);
   border-radius: 50%;
@@ -724,15 +724,15 @@ textarea {
 
 /* klients start */
 
-.klients-list {
+.vip {
   display: flex;
 }
-.klient-logo {
+.vip__logo {
   width: 170px;
   height: 92px;
 }
 
-.klient-link {
+.vip__link {
   padding: 16px 32px;
   display: flex;
   width: 100%;
@@ -745,17 +745,17 @@ textarea {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klient-logo:not(:last-child) {
+.vip__logo:not(:last-child) {
   margin-right: 30px;
 }
 
-.klient-link:hover,
-.klient-link:focus {
+.vip__link:hover,
+.vip__link:focus {
   border: 1px solid var(--brand-color);
   color: var(--brand-color);
 }
 
-.klient-imail {
+.vip__imail {
   display: flex;
   width: 106px;
   height: 60px;
@@ -775,11 +775,11 @@ textarea {
   color: var(--wite-color);
 }
 
-.footer-list {
+.address {
   font-style: normal;
 }
 
-.list-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -800,7 +800,7 @@ textarea {
 
 /* footer-form start */
 
-.blank-title,
+.blank__title,
 .footer-headline {
   color: var(--wite-color);
   text-transform: uppercase;
@@ -810,7 +810,7 @@ textarea {
   text-align: left;
   margin-bottom: 20px;
 }
-.footer-link {
+.address__link {
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 400;
@@ -825,7 +825,7 @@ textarea {
   align-items: flex-end;
 }
 
-.blank-icon {
+.blank___icon {
   position: absolute;
   top: 0;
   right: 28px;
@@ -838,7 +838,7 @@ textarea {
   margin-right: 12px;
 }
 
-.blank-label {
+.blank__label {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -851,11 +851,11 @@ textarea {
   text-align: left;
 }
 
-.blank-wrapper {
+.blank__wrapper {
   position: relative;
 }
 
-.blank-input {
+.blank__input {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -866,16 +866,16 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.blank-input:not(:placeholder-shown) + .blank-label,
-.blank-input:focus + .blank-label {
+.blank__input:not(:placeholder-shown) + .blank__label,
+.blank__input:focus + .blank__label {
   transform: translatey(-220%);
 }
-.blank-img {
+.blank__img {
   fill: var(--wite-color);
   background-size: contain;
 }
 
-.blank-button {
+.blank__button {
   position: relative;
   padding: 10px 28px;
   width: 200px;
@@ -895,16 +895,16 @@ textarea {
   margin-right: 94px;
 }
 
-.reference:not(:last-child) {
+.reference__link:not(:last-child) {
   margin-right: 10px;
 }
 
-.links {
+.reference {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-link-map {
+.address__map {
   color: var(--wite-color);
   text-decoration: none;
   font-weight: 400;
@@ -913,13 +913,13 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-map:focus,
-.footer-link-map:hover,
-.footer-link:hover,
-.footer-link:focus {
+.address__map:focus,
+.address__map:hover,
+.address__link:hover,
+.address__link:focus {
   color: var(--brand-color);
 }
-.reference-link {
+.reference__imail {
   display: flex;
   background-position: center;
   width: 44px;
@@ -935,15 +935,15 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.reference-svg {
+.reference__svg {
   display: flex;
   width: 20px;
   height: 20px;
   fill: var(--wite-color);
 }
 
-.reference-link:hover,
-.reference-link:focus {
+.reference__imail:hover,
+.reference__imail:focus {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
