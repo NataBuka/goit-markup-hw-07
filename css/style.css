@@ -90,7 +90,7 @@ img {
 /*  header start */
 
 /* current */
-.navigation .navigation__link.current {
+.navigation__link.current {
   color: var(--brand-color);
 }
 
@@ -405,7 +405,7 @@ img {
   position: relative;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus + .form-image {
+.form__input:focus + .form__image {
   fill: var(--brand-color);
 }
 .form__input-koment:hover,
@@ -415,13 +415,6 @@ img {
   border-color: var(--brand-color);
   background-color: var(--wite-color);
 }
-
-/*.form-item {
-  position: relative;
-  left: 0;
-  top: 0;
-  margin-bottom: 10px;
-}*/
 
 textarea {
   resize: none;
@@ -625,7 +618,7 @@ textarea {
 /* works finish */
 
 .works__title,
-.klients-title,
+.klients__title,
 .team__title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -825,7 +818,7 @@ textarea {
   align-items: flex-end;
 }
 
-.blank___icon {
+.blank__icon {
   position: absolute;
   top: 0;
   right: 28px;
@@ -834,6 +827,12 @@ textarea {
   height: 24px;
   fill: var(--wite-color);
 }
+
+.blank__img {
+  fill: var(--wite-color);
+  background-size: contain;
+}
+
 .blank {
   margin-right: 12px;
 }
@@ -869,10 +868,6 @@ textarea {
 .blank__input:not(:placeholder-shown) + .blank__label,
 .blank__input:focus + .blank__label {
   transform: translatey(-220%);
-}
-.blank__img {
-  fill: var(--wite-color);
-  background-size: contain;
 }
 
 .blank__button {
@@ -947,15 +942,7 @@ textarea {
   background-color: var(--brand-color);
   border-radius: 50%;
 }
-/* {
-  color: var(--wite-color);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: left;
-  margin-bottom: 20px;
-}*/
+
 /*footer finish */
 
 /* portfolio carts */
@@ -976,7 +963,7 @@ textarea {
   background-color: var(--brand-color);
 }
 
-.card-title {
+.cards__title {
   color: var(--black-color);
   font-weight: 700;
   font-size: 18px;
@@ -985,14 +972,14 @@ textarea {
   margin-bottom: 4px;
 }
 
-.card-text {
+.cards__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--basc-text-color);
 }
 
-.card-article {
+.cards__article {
   padding: 20px 24px;
   border-left: 1px solid var(--border-line-img);
   border-bottom: 1px solid var(--border-line-img);
@@ -1004,21 +991,21 @@ textarea {
   flex-wrap: wrap;
 }
 
-.cards > .card-item:not(:nth-child(3n)) {
+.cards > .cards__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.cards > .card-item:not(:nth-last-child(-n + 3)) {
+.cards > .cards__item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 
-.cards > .card-item {
+.cards > .cards__item {
   flex-basis: calc(100%-3 * 30) / 3;
 }
 
 /* buttons */
 
-.filter-buttom {
+.buttons__buttom {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1034,8 +1021,8 @@ textarea {
   font-size: 16px;
   line-height: 1.62;
 }
-.filter-buttom:focus,
-.filter-buttom:hover {
+.buttons__buttom:focus,
+.buttons__buttom:hover {
   background-color: var(--brand-color);
   border: var(--brand-color);
   color: var(--wite-color);
@@ -1043,20 +1030,20 @@ textarea {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.filter-buttons {
+.buttons {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-buttons .filter-item + .filter-item {
+.buttons .buttons__item + .buttons__item {
   margin-left: 8px;
 }
 
-.card-item {
+.cards__item {
   position: relative;
 }
-.card-imail {
+.cards__imail {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1068,14 +1055,14 @@ textarea {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transform: translateY(0);
 }
-.card-item:hover .card-overlay,
-.card-item:focus .card-overlay {
+.cards__item:hover .cards__overlay,
+.cards__item:focus .cards__overlay {
   transform: translateY(0);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-overlay {
+.cards__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1085,11 +1072,11 @@ textarea {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-box {
+.cards__box {
   position: relative;
   overflow: hidden;
 }
-.card-par {
+.cards__par {
   width: 370px;
   height: 294px;
   padding: 63px 24px;
