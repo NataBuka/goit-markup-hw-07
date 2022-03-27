@@ -488,7 +488,7 @@ textarea {
   background-position: center;
 }
 
-.chek__input:hover + .check__icon {
+.chek__input:focus + .check__icon {
   border-color: var(--brand-color);
 }
 /*.form-label-check {
