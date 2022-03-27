@@ -403,6 +403,7 @@ img {
 }
 .form__field {
   position: relative;
+  margin-bottom: 10px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:focus + .form__image {
@@ -438,7 +439,6 @@ textarea {
   cursor: pointer;
   width: 448px;
   height: 120px;
-  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: 14px;
@@ -486,6 +486,10 @@ textarea {
   border-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.chek__input:hover + .check__icon {
+  border-color: var(--brand-color);
 }
 /*.form-label-check {
   position: relative;
