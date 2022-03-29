@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $secondary-bcg-site-color;
+  color: $bcg-site-color;
+
+  &-logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &-brand {
+    color: var(--wite-color);
+  }
+
+  &__relations {
+    margin-right: 70px;
+  }
+
+  &-form {
+    display: flex;
+    text-align: bottom;
+    align-items: flex-end;
+  }
+
+  &-connection {
+    margin-right: 94px;
+  }
+}
+.relations {
+  display: flex;
+  align-items: baseline;
+}

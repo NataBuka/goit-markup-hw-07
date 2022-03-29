@@ -1,0 +1,18 @@
+/* logo */
+.logo {
+  margin-right: 93px;
+
+  &,
+  &-logo {
+    color: $brand-color;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  &__text {
+    color: $logo-text-color;
+    font-family: Raleway, sans-serif;
+  }
+}
