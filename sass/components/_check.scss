@@ -1,0 +1,53 @@
+.chek {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.check__email {
+  margin-left: 2px;
+  text-decoration: underline;
+  color: $brand-color;
+}
+
+.check .form__label {
+  margin-bottom: 4px;
+}
+
+.check__input:focus + .check__icon {
+  border-color: $brand-color;
+}
+
+.check__label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: left;
+}
+
+.check__icon {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $title-text-color;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check__input:checked + .check__icon {
+  background-color: $brand-color;
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}

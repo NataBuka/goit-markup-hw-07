@@ -1,0 +1,33 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__buttom {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    border: 1px solid $cards-border-color;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background-color: $portfolio-button-color;
+    color: $title-text-color;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+  &__buttom:focus,
+  &__buttom:hover {
+    background-color: $brand-color;
+    border: $brand-color;
+    color: $bcg-site-color;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  & &__item + &__item {
+    margin-left: 8px;
+  }
+}
