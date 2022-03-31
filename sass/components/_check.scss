@@ -4,8 +4,9 @@
   justify-content: right;
   align-items: center;
   margin-bottom: 30px;
+  
 
-  .check__email {
+  &__email {
     margin-left: 2px;
     text-decoration: underline;
     color: $brand-color;
@@ -49,6 +50,6 @@
   }
 }
 
-.check .form__label {
+ .check .form__label {
   margin-bottom: 4px;
-}
+  }
