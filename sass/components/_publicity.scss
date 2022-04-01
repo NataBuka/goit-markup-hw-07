@@ -14,7 +14,7 @@
 }
 
 .publicity__text {
-  color: $color-basic-text');
+  color: $color-basic-text;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -48,11 +48,12 @@
 }
 .publicity__item {
   width: 270px;
+}
 
-  &:not(:last-child) {
+.publicity__item:not(:last-child) {
     margin-right: 30px;
   }
-}
+
 
 .publicity__icon {
   width: 70px;

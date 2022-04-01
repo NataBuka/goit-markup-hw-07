@@ -4,15 +4,16 @@
   justify-content: right;
   align-items: center;
   margin-bottom: 30px;
+}
   
 
-  &__email {
+  .check__email {
     margin-left: 2px;
     text-decoration: underline;
     color: $color-brand;
   }
 
-  &__label {
+  .check__label {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,7 +24,7 @@
     text-align: left;
   }
 
-  &__input:checked + &__icon {
+  .check__input:checked + .check__icon {
     background-color: $color-brand;
     background-image: url("../images/icon-check.svg");
     background-size: contain;
@@ -33,11 +34,11 @@
     background-position: center;
   }
 
-  &__input:focus + &__icon {
+  .check__input:focus + .check__icon {
     border-color: $color-brand; 
   }
 
-  &__icon {
+  .check__icon {
     position: absolute;
     top: 0;
     left: 10px;
@@ -48,7 +49,7 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
+
 
  .check .form__label {
   margin-bottom: 4px;

@@ -1,12 +1,13 @@
 .vip {
   display: flex;
+}
 
-  &__logo {
+  .vip__logo {
     width: 170px;
     height: 92px;
   }
 
-  &__link {
+  .vip__link {
     padding: 16px 32px;
     display: flex;
     width: 100%;
@@ -19,17 +20,17 @@
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__logo:not(:last-child) {
+  .vip__logo:not(:last-child) {
     margin-right: 30px;
   }
 
-  &__link:hover,
-  &__link:focus {
+  .vip__link:hover,
+  .vip__link:focus {
     border: 1px solid $color-brand;
     color: $color-brand;
   }
 
-  &__imail {
+  .vip__imail {
     display: flex;
     width: 106px;
     height: 60px;
@@ -37,4 +38,4 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-}
+

@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
 
-  &__buttom {
+  .buttons__buttom {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -19,15 +20,16 @@
     font-size: 16px;
     line-height: 1.62;
   }
-  &__buttom:focus,
-  &__buttom:hover {
+
+  .buttons__buttom:focus,
+  .buttons__buttom:hover {
     background-color: $color-brand;
     border: $color-brand;
     color: $color-bcg-site;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  & &__item + &__item {
+  .buttons .buttons__item + .buttons__item {
     margin-left: 8px;
   }
-}
+

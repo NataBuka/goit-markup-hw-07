@@ -3,30 +3,31 @@
   padding-bottom: 60px;
   background-color: $color-secondary-bcg-site;
   color: $color-bcg-site;
+}
 
-  &-logo {
+  .footer-logo {
     display: block;
     margin-bottom: 20px;
   }
 
-  &-brand {
+  .footer-brand {
     color: $color-bcg-site;
   }
 
-  &__relations {
+  .footer__relations {
     margin-right: 70px;
   }
 
-  &-form {
+  .footer-form {
     display: flex;
     text-align: bottom;
     align-items: flex-end;
   }
 
-  &-connection {
+  .footer-connection {
     margin-right: 94px;
   }
-}
+
 .relations {
   display: flex;
   align-items: baseline;
