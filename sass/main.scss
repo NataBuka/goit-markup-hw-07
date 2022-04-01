@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./utils/utils.scss";
 @import "./components/header";
 @import "./components/navigation";
 @import "./components/logo";
@@ -7,6 +6,7 @@
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/publicity";
+@import "./utils/utils.scss";
 @import "./components/works";
 @import "./components/team";
 @import "./components/contacts";
