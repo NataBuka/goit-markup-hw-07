@@ -4,8 +4,8 @@
 
   padding-top: 32px;
   padding-bottom: 32px;
-  border-bottom: 1px solid map-get($colors, 'header-line');
-  background-color: map-get($colors, 'bcg-site');
+  border-bottom: 1px solid $color-header-line;
+  background-color: $color-bcg-site;
 }
 
 .container-header {

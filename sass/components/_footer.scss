@@ -1,8 +1,8 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: map-get($colors, 'secondary-bcg-site');
-  color: map-get($colors, 'bcg-site');
+  background-color: $color-secondary-bcg-site;
+  color: $color-bcg-site;
 
   &-logo {
     display: block;
@@ -10,7 +10,7 @@
   }
 
   &-brand {
-    color: map-get($colors, 'bcg-site');
+    color: $color-bcg-site;
   }
 
   &__relations {

@@ -7,14 +7,14 @@
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   &__link {
     display: flex;
     margin-left: auto;
     align-items: center;
-    color: map-get($colors, 'basic-text');
+    color: $color-basic-text;
   }
 
   &__item {
@@ -22,13 +22,13 @@
   }
 
   &__icon {
-    fill: map-get($colors, 'basic-text');
+    fill: $color-basic-text;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__link:hover &__icon {
-    fill: map-get($colors, 'brand');
+    fill: $color-brand;
   }
 }
 

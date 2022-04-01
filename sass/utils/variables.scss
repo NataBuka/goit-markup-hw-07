@@ -1,33 +1,33 @@
-$colors:( 
-'brand': #2196f3,
-'button': #188ce8,
-'portfolio-button': #f5f4fa,
-'header-line': #ececec,
-'button-close-border': rgba(0, 0, 0, 0.1),
-'cards-border': #eeeeee,
-'cards-overley': rgba(33, 150, 243, 0.9),
-'hero-transparent-blackout': rgba(47, 48, 58, 0.4),
-'works-transparent-blackout': rgba(47, 48, 58, 0.8),
-'client-accent': rgba(175, 177, 184, 1),
-'input-border': rgba(33, 33, 33, 0.2),
-'footer-form-input': rgba(255, 255, 255, 0.3),
-'label-footer': rgba(255, 255, 255, 0.6),
 
-'basic-text': #757575,
-'secondary-text': rgba(255, 255, 255, 0.6),
-'title-text': #212121,
-'logo-text': #000000,
-'placeholder-text': rgba(117, 117, 117, 0.5),
+ $color-brand: #2196f3;
+ $color-button: #188ce8;
+ $color-portfolio-button: #f5f4fa;
+ $color-header-line: #ececec;
+ $color-button-close-border: rgba(0, 0, 0, 0.1);
+ $color-cards-border: #eeeeee;
+ $color-cards-overley: rgba(33, 150, 243, 0.9);
+ $color-hero-transparent-blackout: rgba(47, 48, 58, 0.4);
+ $color-works-transparent-blackout: rgba(47, 48, 58, 0.8);
+ $color-client-accent: rgba(175, 177, 184, 1);
+ $color-input-border: rgba(33, 33, 33, 0.2);
+ $color-footer-form-input: rgba(255, 255, 255, 0.3);
+ $color-label-footer: rgba(255, 255, 255, 0.6);
 
-'bcg-site': #ffffff,
-'backdrop-bcg': rgba(0, 0, 0, 0.2),
-'secondary-bcg-site': #2f303a,
-'hero-bcg': #c4c4c4,
-'team-bcg': #f5f4fa,
-'link-bcg': rgba(255, 255, 255, 0.1),
-'portfolio-bcg': #e5e5e5,
-);
+ $color-basic-text: #757575;
+ $color-secondary-text: rgba(255, 255, 255, 0.6);
+ $color-title-text: #212121;
+ $color-logo-text: #000000;
+ $color-placeholder-text: rgba(117, 117, 117, 0.5);
 
-@function getColor($key) {
-    @return map-get($colors, $key);
-}
+ $color-bcg-site: #ffffff;
+ $color-backdrop-bcg: rgba(0, 0, 0, 0.2);
+ $color-secondary-bcg-site: #2f303a;
+ $color-hero-bcg: #c4c4c4;
+ $color-team-bcg: #f5f4fa;
+ $color-link-bcg: rgba(255, 255, 255, 0.1);
+ $color-portfolio-bcg: #e5e5e5;
+
+     /* text */
+
+ $h1-font-weight: 900;
+ $h1-font-size: 14px;

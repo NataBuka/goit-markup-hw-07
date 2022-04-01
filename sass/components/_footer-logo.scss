@@ -3,11 +3,11 @@
   margin-bottom: 20px;
 }
 .footer-brand {
-  color: map-get($colors, 'bcg-site');
+  color: $color-bcg-site;
 }
 .blank__title,
 .footer-headline {
-  color: map-get($colors, 'bcg-site');
+  color: $color-bcg-site;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;

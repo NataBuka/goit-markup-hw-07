@@ -1,7 +1,7 @@
 body {
   /* padding-top: 80px;*/
   margin: 0px;
-  color: getColor('basic-text');
+  color: $color-basic-text;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -15,6 +15,7 @@ h6,
 p {
   margin-top: 0px;
   margin-bottom: 0px;
+  text-decoration: none;
 }
 
 ul,

@@ -9,7 +9,7 @@
   &__email {
     margin-left: 2px;
     text-decoration: underline;
-    color: map-get($colors, 'brand');
+    color: $color-brand;
   }
 
   &__label {
@@ -24,7 +24,7 @@
   }
 
   &__input:checked + &__icon {
-    background-color: map-get($colors, 'brand');
+    background-color: $color-brand;
     background-image: url("../images/icon-check.svg");
     background-size: contain;
     background-origin: border-box;
@@ -34,7 +34,7 @@
   }
 
   &__input:focus + &__icon {
-    border-color:map-get($colors, 'brand'); 
+    border-color: $color-brand; 
   }
 
   &__icon {
@@ -43,7 +43,7 @@
     left: 10px;
     width: 16px;
     height: 16px;
-    border: 2px solid map-get($colors, 'title-text');
+    border: 2px solid $color-title-text;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

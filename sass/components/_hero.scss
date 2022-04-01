@@ -11,8 +11,8 @@
     color: map-get($colors, 'bcg-site');
     font-style: normal;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
+    font-weight: $h1-font-weight;
+    font-size: $h1-font-size;
     line-height: 1.36;
     letter-spacing: 0.06em;
   }
@@ -35,9 +35,9 @@
 /*button*/
 .button {
   font-family: inherit;
-  color: map-get($colors, 'bcg-site');
-  background-color: map-get($colors, 'brand');
-  border: map-get($colors, 'brand');
+  color: $color-bcg-site;
+  background-color: $color-brand;
+  border: $color-brand;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -51,6 +51,6 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: map-get($colors, 'button');
+    background-color: $color-button;
   }
 }
