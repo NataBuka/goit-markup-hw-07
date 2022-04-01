@@ -12,7 +12,7 @@
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -59,7 +59,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
-  background-color: aquamarine;
 }
 
   .form__title {
@@ -112,7 +111,7 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .form__input:focus + &__image {
+  .form__input:focus + .form__image {
     fill: $color-brand;
   }
   .form__input-koment:hover,
@@ -139,7 +138,7 @@
     margin-bottom: 4px;
   }
 
-  .form__item-koment &__input-koment::placeholder {
+  .form__item-koment .form__input-koment::placeholder {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
