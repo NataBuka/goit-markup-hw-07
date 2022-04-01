@@ -6,7 +6,7 @@
 .publicity__caption {
   margin-top: 0px;
   margin-bottom: 10px;
-  color: $title-text-color;
+  color: getColor('title-text');
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -14,7 +14,7 @@
 }
 
 .publicity__text {
-  color: $basic-text-color;
+  color: getColor('basic-text');
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -32,7 +32,7 @@
   align-items: center;
 
   height: 120px;
-  background-color: $team-bcg-color;
+  background-color: getColor('team-bcg');
   margin-bottom: 30px;
 }
 

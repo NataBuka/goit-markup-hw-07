@@ -12,10 +12,10 @@
     width: 44px;
     height: 44px;
     cursor: pointer;
-    border: 1px solid $link-bcg-color;
+    border: 1px solid map-get($colors, 'link-bcg');
     border-radius: 50%;
 
-    background-color: $link-bcg-color;
+    background-color: map-get($colors, 'link-bcg');
     justify-content: center;
     align-items: center;
 
@@ -26,12 +26,12 @@
     display: flex;
     width: 20px;
     height: 20px;
-    fill: $bcg-site-color;
+    fill: map-get($colors, 'bcg-site');
   }
 
   &__imail:hover,
   &__imail:focus {
-    background-color: $brand-color;
+    background-color: map-get($colors, 'brand');
     border-radius: 50%;
   }
 }

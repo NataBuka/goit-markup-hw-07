@@ -11,8 +11,8 @@
     font-weight: 700;
     line-height: 1.14;
     text-align: center;
-    color: $bcg-site-color;
-    background-color: $works-transparent-blackout-color;
+    color: getColor('bcg-site');
+    background-color: getColor('works-transparent-blackout');
   }
 
   &__item {
@@ -31,7 +31,7 @@
 .team__title {
   margin-top: 0px;
   margin-bottom: 50px;
-  color: $title-text-color;
+  color: getColor('title-text');
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 
   &__title {
-    color: $title-text-color;
+    color: getColor('title-text');
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -15,14 +15,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    color: $basic-text-color;
+    color: getColor('basic-text');
   }
 
   &__article {
     padding: 20px 24px;
-    border-left: 1px solid $cards-border-color;
-    border-bottom: 1px solid $cards-border-color;
-    border-right: 1px solid $cards-border-color;
+    border-left: 1px solid getColor('cards-border');
+    border-bottom: 1px solid getColor('cards-border');
+    border-right: 1px solid getColor('cards-border');
   }
 
   & > &__item:not(:nth-child(3n)) {
@@ -75,8 +75,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.55;
-    color: $bcg-site-color;
-    background-color: $cards-overley-color;
+    color: getColor('bcg-site');
+    background-color: getColor('cards-overley');
   }
 }
 .box:hover,

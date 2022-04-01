@@ -5,7 +5,7 @@
   &__link:focus,
   &__map:hover,
   &__map:focus {
-    color: $brand-color;
+    color: map-get($colors, 'brand');
   }
 
   &__item:not(:last-child) {
@@ -13,7 +13,7 @@
   }
 
   &__link {
-    color: $secondary-text-color;
+    color: map-get($colors, 'secondary-text');
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -22,7 +22,7 @@
   }
 
   &__map {
-    color: $bcg-site-color;
+    color: map-get($colors, 'bcg-site');;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;

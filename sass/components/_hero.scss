@@ -2,13 +2,13 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: $secondary-bcg-site-color;
+  background-color: map-get($colors, 'secondary-bcg-site');
 
   &__title {
     margin-top: 0px;
     margin-bottom: 30px;
 
-    color: $bcg-site-color;
+    color: map-get($colors, 'bcg-site');
     font-style: normal;
     text-transform: uppercase;
     font-weight: 900;
@@ -23,10 +23,10 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: $hero-bcg-color;
+  background-color: map-get($colors, 'hero-bcg');
   background-image: linear-gradient(
-      $hero-transparent-blackout-color,
-      $hero-transparent-blackout-color
+      map-get($colors, 'hero-transparent-blackout'),
+      map-get($colors, 'hero-transparent-blackout')
     ),
     url("../images/background-Img.jpg");
   background-repeat: no-repeat;
@@ -35,9 +35,9 @@
 /*button*/
 .button {
   font-family: inherit;
-  color: $bcg-site-color;
-  background-color: $brand-color;
-  border: $brand-color;
+  color: map-get($colors, 'bcg-site');
+  background-color: map-get($colors, 'brand');
+  border: map-get($colors, 'brand');
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -51,6 +51,6 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: $button-color;
+    background-color: map-get($colors, 'button');
   }
 }

@@ -8,11 +8,11 @@
       color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
-    border: 1px solid $cards-border-color;
+    border: 1px solid map-get($colors, 'cards-border');
     border-radius: 4px;
     padding: 6px 22px;
-    background-color: $portfolio-button-color;
-    color: $title-text-color;
+    background-color: map-get($colors, 'portfolio-button');
+    color: map-get($colors, 'title-text');
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -21,9 +21,9 @@
   }
   &__buttom:focus,
   &__buttom:hover {
-    background-color: $brand-color;
-    border: $brand-color;
-    color: $bcg-site-color;
+    background-color: map-get($colors, 'brand');
+    border: map-get($colors, 'brand');
+    color: map-get($colors, 'bcg-site');
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
