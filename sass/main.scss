@@ -5,7 +5,9 @@
 @import "./components/logo";
 @import "./components/connection";
 @import "./components/hero";
+@import './components/backdrop';
 @import "./components/modal";
+@import "./components/check";
 @import "./components/publicity";
 @import "./components/works";
 @import "./components/team";
@@ -16,7 +18,7 @@
 @import "./components/footer-logo";
 @import "./components/footer-connection";
 @import "./components/footer-form";
-@import "./components/check";
-@import "./components/portfolio";
-@import "./components/filter";
-@import "./components/portfolio-cards";
+//@import "./components/portfolio";
+@import "./portfolio.scss/filter";
+@import "./portfolio.scss/portfolio";
+@import './portfolio.scss/portfolio-cards'

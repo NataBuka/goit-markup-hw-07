@@ -950,7 +950,7 @@ img {
   position: absolute;
   top: 0;
   right: 28px;
-  -webkit-transform: translateY(50%);
+  -webkit-transforfm: translateY(50%);
           transform: translateY(50%);
   width: 24px;
   height: 24px;
