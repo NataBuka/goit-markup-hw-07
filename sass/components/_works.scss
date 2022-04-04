@@ -17,7 +17,7 @@
 
   &__item {
     position: relative;
-    flex-basis: calc(100%-3 * 30px / 3);
+    flex-basis: calc(100% - (3 * 30px) / 3);
   }
 
   &-images {

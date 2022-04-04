@@ -1,5 +1,5 @@
 
-@import "./utils/utils.scss";
+@import "./utils/utl.scss";
 @import "./utils/variables";
 @import "./components/header";
 @import "./components/navigation";
@@ -19,7 +19,6 @@
 @import "./components/footer-logo";
 @import "./components/footer-connection";
 @import "./components/footer-form";
+@import "./components/filter";
 @import "./components/portfolio";
-@import "./portfolio.scss/filter";
-@import "./portfolio.scss/portfolio";
-@import './portfolio.scss/portfolio-cards'
+@import './components/portfolio-cards';

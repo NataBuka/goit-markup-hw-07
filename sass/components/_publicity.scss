@@ -23,7 +23,7 @@
 }
 
 .publicity-list .publicity__item {
-  flex-basis: calc(100%-4 * 30 / 4);
+  flex-basis: calc(100% - (4 * 30px) / 4);
 }
 
 .publicity__img {

@@ -35,7 +35,7 @@
   }
 
   .cards > .cards__item {
-    flex-basis: calc(100%-3 * 30) / 3;
+    flex-basis: calc(100% - (3 * 30px)) / 3;
   }
 
   .cards__item {
