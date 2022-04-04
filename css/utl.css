@@ -1,7 +1,7 @@
 body {
   /* padding-top: 80px;*/
   margin: 0px;
-  color: red;
+  color: #757575;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -58,4 +58,5 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}/*# sourceMappingURL=utl.css.map */
+}
+/*# sourceMappingURL=utl.css.map */
