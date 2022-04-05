@@ -1,11 +1,13 @@
 .works {
   padding-top: 0px;
+}
 
-  &__text {
+  .works__text {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+    width: 370px;
     padding: 27px 85px;
     font-size: 14px;
     font-weight: 700;
@@ -15,16 +17,16 @@
     background-color: $color-works-transparent-blackout;
   }
 
-  &__item {
+  .works__item {
     position: relative;
     flex-basis: calc(100% - (3 * 30px) / 3);
   }
 
-  &-images {
+  .works__images {
     display: flex;
     justify-content: space-between;
   }
-}
+
 
 .works__title,
 .clients__title,

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="body">
@@ -74,66 +74,7 @@
 
         </section>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-                
-                <button data-modal-close class="btn-close">
-                    <svg class="close">
-                    <use href="./images/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-
-                <form name="form" class="form js-speaker-form" autocomplete="off">
-
-                <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
-                
-                <div class="form__field"> 
-                    <label class="form__label" for="name">Имя</label>
-                    <input class="form__input" type="text" name="user-name" id="name" placeholder=" ">  
-                    <svg class="form__image">
-                        <use  href="./images/sprite.svg#icon-person" class="form-img"> </use>
-                    </svg>
-                </div>
-
-                <div class="form__field">
-                   <label class="form__label" for="tel">Телефон</label>
-                    <input class="form__input" type="tel" name="tel" id="tel" placeholder=" ">
-                    <svg class="form__image">
-                        <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg>
-                </div>
-
-                <div class="form__field">
-                    <label class="form__label" for="email">Почта</label>            
-                    <input class="form__input" type="email" name="email" id="email" placeholder=" ">
-                    <svg class="form__image">
-                        <use href="./images/sprite.svg#icon-mail"></use>
-                    </svg>
-                </div>
-
-                <div class="form__field">
-                <div class="form__item-koment">
-                    <label class="form__label" for="koment">Комментарий</label>
-                        <textarea class="form__input-koment"  placeholder="Введите текст" name="koment" id="koment"></textarea>
-                </div>
-                </div>
-
-                <div class="check">
-                    <label class="check__label" for="choice">Соглашаюсь с рассылкой и принимаю
-                        <input class="check__input visually-hidden" type="checkbox" name="choice" value="choice" id="choice">
-                        <span class="check__icon"></span>
-                        <a href="" class="check__email"> Условия договора</a>
-                    </label>
-                </div>
-            
-                
-
-                <button class="form-button" type="submit">Отправить</button>
-                    
-             </form>
-
-            </div>
-        </div>
+     
         <section class="publicity section">
             <div class="wrapper">
                 <h2 class="publicity__title visually-hidden">Почему вы захотите остаться с нами</h2>
@@ -193,7 +134,7 @@
         <section class="works section">
             <div class="wrapper">
                 <h2 class="works__title">Чем мы занимаемся</h2>
-                <ul class="works-images list">
+                <ul class="works__images list">
 
                     <li class="works__item"><img src="./images/img.jpg" alt="Человек что-то печатает на планшете"
                             width="370" height="294">
@@ -526,6 +467,66 @@
                
             </form>
         </div>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                  
+                  <button data-modal-close class="btn-close">
+                      <svg class="close">
+                      <use href="./images/sprite.svg#icon-close"></use>
+                      </svg>
+                  </button>
+  
+                  <form name="form" class="form js-speaker-form" autocomplete="off">
+  
+                  <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+                  
+                  <div class="form__field"> 
+                      <label class="form__label" for="name">Имя</label>
+                      <input class="form__input" type="text" name="user-name" id="name" placeholder=" ">  
+                      <svg class="form__image">
+                          <use  href="./images/sprite.svg#icon-person" class="form-img"> </use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                     <label class="form__label" for="tel">Телефон</label>
+                      <input class="form__input" type="tel" name="tel" id="tel" placeholder=" ">
+                      <svg class="form__image">
+                          <use href="./images/sprite.svg#icon-phone"></use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                      <label class="form__label" for="email">Почта</label>            
+                      <input class="form__input" type="email" name="email" id="email" placeholder=" ">
+                      <svg class="form__image">
+                          <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                  </div>
+  
+                  <div class="form__field">
+                  <div class="form__item-koment">
+                      <label class="form__label" for="koment">Комментарий</label>
+                          <textarea class="form__input-koment"  placeholder="Введите текст" name="koment" id="koment"></textarea>
+                  </div>
+                  </div>
+  
+                  <div class="check">
+                      <label class="check__label" for="choice">Соглашаюсь с рассылкой и принимаю
+                          <input class="check__input" type="checkbox" name="choice" value="choice" id="choice">
+                          <span class="check__icon"></span>
+                          <a href="" class="check__email"> Условия договора</a>
+                      </label>
+                  </div>
+              
+                  
+  
+                  <button class="form-button" type="submit">Отправить</button>
+                      
+               </form>
+  
+              </div>
+          </div>
    
     </footer>
     <script>

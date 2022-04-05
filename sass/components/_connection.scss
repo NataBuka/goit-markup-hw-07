@@ -15,7 +15,7 @@
     display: flex;
     margin-left: auto;
     align-items: center;
-    color: $color-basic-text;
+    color: $color-text;
   }
 
   .connection__item {
@@ -23,7 +23,7 @@
   }
 
   .connection__icon {
-    fill: $color-basic-text;
+    fill: $color-text;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
