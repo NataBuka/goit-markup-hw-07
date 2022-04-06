@@ -28,9 +28,7 @@
   }
 
 
-.works__title,
-.clients__title,
-.team__title {
+  .works__title {
   margin-top: 0px;
   margin-bottom: 50px;
   color: $color-title-text;
@@ -38,4 +36,4 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
+  }

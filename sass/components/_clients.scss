@@ -18,16 +18,21 @@
     color: $color-client-accent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+      &:hover,
+      &:focus {
+        border: 1px solid $color-brand;
+        color: $color-brand;
+      }
   }
 
   .vip__logo:not(:last-child) {
     margin-right: 30px;
   }
 
-  .vip__link:hover,
-  .vip__link:focus {
-    border: 1px solid $color-brand;
-    color: $color-brand;
+  .clients__title {
+    @extend .works__title;
   }
 
   .vip__imail {

@@ -23,11 +23,7 @@
 
   &__map {
     color: $color-bcg-site;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend .address__link;
     
   }
   

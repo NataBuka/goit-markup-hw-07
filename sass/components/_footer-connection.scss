@@ -21,6 +21,13 @@
     align-items: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+
+    &:hover,
+    &:focus {
+    background-color: $color-brand;
+    border-radius: 50%;
+  }
   }
 
   .reference__svg {
@@ -30,9 +37,5 @@
     fill: $color-bcg-site;
   }
 
-  .reference__imail:hover,
-  .reference__imail:focus {
-    background-color: $color-brand;
-    border-radius: 50%;
-  }
+  
 

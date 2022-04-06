@@ -1,6 +1,10 @@
 .team {
   background-color: $color-team-bcg;
 
+  &__title {
+  @extend .works__title;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

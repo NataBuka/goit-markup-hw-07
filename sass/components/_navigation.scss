@@ -27,18 +27,22 @@
     letter-spacing: 0.02em;
   }
 
+  
+   .navigation__link:hover,
+   .navigation__link:focus,
+   .navigation__link:active,
+   .connection__link:hover,
+   .connection__link:focus {
+    color: $color-brand;
+    }
+  
+
   .navigation__link.current {
     color: $color-brand;
   }
 
 
-.navigation__link:hover,
-.navigation__link:focus,
-.navigation__link:active,
-.connection__link:hover,
-.connection__link:focus {
-  color: $color-brand;
-}
+
 
 .Studio {
   position: relative;

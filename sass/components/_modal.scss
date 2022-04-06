@@ -25,12 +25,13 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form__field:hover,
-.form__field:focus,
-.btn-close:focus,
-.btn-close:hover {
+  .form__field:hover,
+  .form__field:focus,
+  .btn-close:focus,
+  .btn-close:hover {
   fill: $color-brand;
   }
+
 
 
 .close {
@@ -72,6 +73,10 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__input:focus + .form__image {
+  fill: $color-brand;
+}
+
 .form__label {
   margin-bottom: 4px;
   font-size: 12px;
@@ -96,7 +101,11 @@
   margin-bottom: 10px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus + .form__image {
+
+
+.check__input {
+  appearance: none;
+  position: absolute;
   fill: $color-brand;
 }
 
@@ -107,6 +116,7 @@
   border-color: $color-brand;
   background-color: $color-bcg-site;
 }
+
 
 
 textarea {
@@ -179,6 +189,7 @@ textarea {
 }
 
 
+
 .check__input:checked + .check__icon {
   background-color: $color-brand;
   background-image: url("../images/icon-check.svg");
@@ -188,13 +199,14 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .check__input:focus + .check__icon {
   border-color: $color-brand;
 }
 
 .check__input {
-appearance: none;
-position: absolute;
+  appearance: none;
+  position: absolute;
 }
 .check__label {
   display: flex;
@@ -207,19 +219,15 @@ position: absolute;
   text-align: left;
 }
 .form-button {
+  @include button-style();
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
-
-  padding: 10px 56px;
   margin-top: 30px;
-  color: $color-bcg-site;
-  background-color: $color-brand;
-  border: $color-brand;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
+  padding: 10px 56px;
   text-align: center;
+  
+  &:hover {
+    background-color: $color-button;
+  }
 }
